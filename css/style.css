@@ -1,0 +1,716 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    font-family: 'Roboto', sans-serif;}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+/*Aqui estou começando o header*/
+
+header{
+    width: 100%;
+    height: 80vh;
+    min-height: 800px;
+    /*max-height: 700px;*/
+    background-image: url('../imagens/capa.png');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 40px 2%;
+    font-weight: 300;
+    opacity: 1;
+}
+
+header .logo{
+    float: left;
+    width: 500px;
+    height: 200px;
+    background-image: url('../imagens/ac-logotp.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -70px;
+    
+}
+
+header nav{
+    float: right;
+}
+
+nav.mobile-menu {
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url('../imagens/menu.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+/*
+nav.mobile-menu:hover ul{
+    opacity: 1;
+}
+*/
+
+nav.mobile-menu > ul{
+    display: none;
+    background-color: #020142;
+    position: absolute;
+    padding-top: 50px;
+    width: 70%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    list-style-type: none;
+    box-shadow: 2px 1px 2px black;
+}
+
+nav.mobile-menu ul li{
+    padding: 15px 0;
+    transition: 0.4s;
+}
+
+nav.mobile-menu ul li:hover {
+    background-color: rgb(230,230,230);
+}
+
+nav.mobile-menu ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav.desktop-menu ul li a:hover{
+    color:rgb(200,200,200);
+}
+
+nav.desktop-menu{
+    position: fixed;
+    right: 10%;
+    padding: 20px;
+    z-index: 999999;
+    border-radius: 5px;
+    background-color: rgba(230,230,230,0.3);
+}
+
+nav.desktop-menu ul{
+    list-style-type: none;
+}
+
+header nav.desktop-menu li{
+    float: left;
+    padding: 0 20px;
+}
+
+header nav.desktop-menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+header nav.desktop-menu li a:hover{
+    color: #FF703D;
+}
+
+/***/
+
+/*Aqui estou começando a chamada*/
+
+.chamada1{
+    float: right;
+    margin: 140px 150px;
+    max-width: 600px;
+}
+
+.chamada1 h2{
+    font-size: 50px;
+    color: white;
+    font-weight: 300;
+}
+
+.chamada1 p{
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+}
+
+/***/
+
+/*Aqui estou começando a sessão de número 1*/
+
+section.sessao1{
+    width: 100%;
+    background-color: #020142;
+    padding: 0px 2%;
+    height: 400px;
+}
+
+section.sessao1 .container{
+    max-width: 1000px;
+    height: calc(100%+30px);
+}
+
+.texto-sessao1{
+    float: left;
+    position: relative;
+    left: 60px;
+    color: white;
+    width: 50%;
+    margin-top: 60px;
+    padding-left: 80px;
+}
+
+.texto-sessao1 h2{
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.texto-sessao1 p{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.texto-sessao1 ul{
+    font-size: 15px;
+    list-style-position: outside;
+    padding-left: 15px;
+}
+
+.texto-sessao1 ul li{
+    float: left;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.btn1-texto{
+    background-color: #FF703D;
+    width: 165px;
+    height: 44px;
+    font-size: 13px;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 30px;
+}
+
+.btn1-texto a{
+    text-decoration: none;
+    color: white;
+}
+
+.device-sessao1{
+    float: left;
+    width: 50%;
+    height: 430px;
+    top: -30px;
+    position: relative;
+    background-image: url('../imagens/device.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/***/
+
+/*Aqui estou começando a sessão 2*/
+
+.sessao2{
+    padding-left: 2%;
+    padding-right: 2%;
+    background-image: url(../imagens/chamada2.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.sessao2 .container{
+    max-width: 1000px;
+}
+
+.sessao2 h2{
+    color: white;
+    font-weight: 300;
+}
+
+.sessao2 p{
+    margin-top: 30px;
+    max-width: 800px;
+    display: inline-block;
+    color: white;
+}
+
+.sessao2 img{
+    position: relative;
+    top: 70px;
+    width: 80%;
+    margin-top: 10px;
+    box-shadow: 0px 5px 5px black;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/***/
+
+/*Aqui estou começando a sessão de número 3*/
+
+.sessao3{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.part1{
+    color: white;
+    width: 100%;
+    padding: 140px 0 90px 0;
+    background-color: #192123;
+    margin: 0 auto;
+}
+
+.part1 h2{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 23px;
+    margin-bottom: 8px;
+    margin-left: 50px;
+}
+
+.part1 p{
+    
+}
+
+.wrapper-part1{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.sobre-autor{
+    max-width: 500px;
+    padding-left: 30px;
+}
+
+.sobre-autor h2{
+    color: white;
+    font-weight: 400;
+    font-size: 21px;
+    
+}
+
+.wrapper-part1 p{
+    max-width: 400px;
+    font-size: 15px;
+    line-height: 25px;
+    color: white;
+    font-style: italic;
+    font-weight: 100;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.wrapper-part1 .img-autor{
+    position: relative;
+    float: right;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    background-image: url('../imagens/andré.jpg');
+    background-size: contain;
+    background-position: center;
+    top: -50px;
+    left: -90px;
+}
+
+.texto-autor{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.texto-autor p{
+    color: white;
+    font-size: 15px;
+
+}
+
+
+.part2{
+    width: 100%;
+    padding: 140px 0 90px 0;
+    background-color: black;
+}
+
+.part2 h2{
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.part2 .projeto1{
+    width: 100%;
+}
+
+.part2 .projeto1 .single1{
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+    background-image: url(../imagens/projeto.alexandre2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.part2 h3{
+    font-size: 23px;
+    position: relative;
+    top: 40px;
+    left: 0;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+}
+
+.part2 .projeto1 .single2{
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+    background-image: url(../imagens/projeto.alexandre.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.part2 .projeto1 .single3{
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+    background-image: url(../imagens/projeto.alexandre3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.part2 .projeto1 .single4{
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+    background-image: url(../imagens/projeto.alexandre4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/***/
+
+/*Aqui estou começando a sessão de número 4*/
+
+.sessao4{
+    padding: 100px 0;
+    background-color: #020142;
+    color: white;
+}
+
+.sessao4 .container{
+    margin-left: 5%;
+    margin-top: -60px;
+}
+
+.sessao4 .container h3{
+    margin-bottom: 21px;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+div.contato-wrapper{
+    display: flex;
+    width: 100%;
+}
+
+.sessao4 .container p{
+    margin-top: 10px;
+    font-size: 23px;
+    font-weight: 100;
+}
+
+.sessao4 .container img{
+    margin-left: 30px;
+    width: 45px;
+    height: 45px;
+}
+
+
+
+.btn{
+    font-size: 10px;
+    width: 40px;
+    height: 40px;
+    background-color:#FF703D;
+    position: fixed;
+    right: 2%;
+    bottom: 100px;
+    z-index: 2;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+footer{
+    padding: 40px 2%;
+    background-color: #192123;
+    color: white;
+
+}
+
+footer .footer1 p{
+    float: left;
+    font-size: 14px;
+}
+
+footer .footer2 p{
+    float: right;
+    font-size: 14px;
+}
+
+@media screen and (max-width:800px){
+
+    .chamada1{
+        max-width: none;
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 170px 0;
+    }
+
+    .chamada1 h2{
+        font-size: 30px;
+        padding: 0 10px;
+        color: white;
+        font-weight: 300;
+    }
+    
+    .chamada1 p{
+        font-size: 15px;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .form{
+        transform: none;
+    }
+}
+
+
+@media screen and (max-width:768px){
+
+    header{
+        width: 100%;
+        height: auto;
+        min-height: 90vh;
+        padding: 40px 2%;
+    }
+
+    header .logo{
+        width: 300px;
+        height: 100px;
+        background-size: cover;
+        top: -50px;
+    }
+
+    nav.desktop-menu{
+        display: none;
+    }
+
+    nav.mobile-menu{
+        display: block;
+    }
+    nav.mobile-menu ul li{
+        list-style-type: none;
+        color: white;
+    }
+
+    nav.mobile-menu li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .chamada1{
+        max-width: none;
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 100px 0;
+    }
+
+    .chamada1 h2{
+        font-size: 30px;
+        padding: 0 10px;
+        color: white;
+        font-weight: 300;
+    }
+    
+    .chamada1 p{
+        font-size: 15px;
+        color: white;
+        margin-top: 10px;
+    }
+ 
+    section.sessao1{
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+
+    .texto-sessao1{
+        width: 100%;
+        float: none;
+        margin-top: 0;
+        padding-left: 0;
+        position: static;
+        display: inline-block;
+    }
+
+    .texto-sessao1 ul{
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .texto-sessao1 ul li{
+        float: none;
+        text-align: left;
+    }
+
+    .btn1-texto{
+        display: inline-block;
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .device-sessao1{
+        display: none;
+    }
+
+    .sessao2{
+        padding: 40px 2%;
+    }
+
+    .sessao2 img{
+        width: 90%;
+    }
+
+    .sessao3{
+        flex-wrap: wrap;
+    }
+    .sessao3 .part1{
+        width: 100%;
+    }
+
+    .wrapper-part1 .img-autor{
+        top: -50px;
+        left: -50px;
+    }
+
+    .sessao3 .part2{
+        width: 100%;
+    }
+
+    .sessao3 .wrapper-part1{
+        text-align: left;
+        margin-left: 20%;
+    }
+
+    section.sessao4 .container{
+        text-align: center;
+    }
+
+    div.contato-wrapper{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 580px){
+    .part1{
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    .sessao3 .wrapper-part1{
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .sobre-autor{
+        padding-top: 50px;
+    }
+
+    .sobre-autor h2{
+        text-align: left;
+        margin-left: 3%;
+        font-size: 20px;
+
+    }
+
+    .wrapper-part1 .img-autor{
+        left: -20px;
+    }
+
+    .wrapper-part1 p{
+        margin-left: 3%;
+    }
+
+    .part2{
+        width: 100%;
+    }
+
+    .sessao4 .container{
+        margin: 0 auto;
+    }
+
+    div.contato-wrapper{
+        display: block;
+        max-width: 375px;
+        text-align: center;
+    }
+
+    div.contato-wrapper p{
+        flex-wrap: nowrap;
+    }
+
+    footer{
+        text-align: center;
+    
+    }
+    
+    footer .footer1 p{
+        float: none;
+    }
+    
+    footer .footer2 p{
+        float: none;
+        margin-top: 8px;
+    }
+
+}
